@@ -62,9 +62,9 @@
 
 
     init python:
-        style.say_dialogue.language = "western"
-        style.nvl_dialogue.language = "western"
-        style.history_text.language = "western"
+    style.say_dialogue.language = "western"
+    style.nvl_dialogue.language = "western"
+    style.history_text.language = "western"
 
  9. これで8. で設定したテキストの折り返しで文法を考慮した折り返しが実施されるはずです。ゲームのリリース時にはjanome.rpycとjanome_cache.rpycを配布物に含めてください。
  また、配布物のビルド前にrenpy本体にコピーしたjanomeフォルダは削除してください。ここにファイルがあるとPC版では一緒に配布されてしまい、Android版ではエラーでビルドできなくなるようです。
