@@ -52,12 +52,14 @@
  7. 以下のように既存の折り返し関数をjanomeで上書きしてください。annotate_unicode以外であればどれでもよいですが、使用しないだろう annotate_westernを推奨します。
  これによりlanguageスタイルプロパティーに"western"を指定したテキストには"western"ではなくjanomeによる折り返しが行なわれます。:
 
+
     init python:
         renpy.text.textsupport.annotate_western = _janome.annotate_janome
 
  8. janomeによる折り返しを使用したいテキストのスタイルに7. で設定したlanguageスタイルプロパティーを設定してください。
  例えばadvやnvlウィンドウのテキストならばsay_dialogueとnvl_dialogue テキスト履歴はhistory_textになります。<Shift+i>で使用できるstyle インスペクターでスタイル名は分かります。
  影響が大きすぎるのでdefaultスタイルの変更は非推奨です。:
+
 
     init python:
         style.say_dialogue.language = "western"
