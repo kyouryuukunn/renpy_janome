@@ -70,8 +70,14 @@
 
  ライセンスについて
 
- 本ライブラリを使用したゲームをリリースする場合、janomeもMeCap-IPADICも配布物には直接含まないはずで、含むのはそれらの結果を解析したキャッシュデータだけなのですがこの場合ライセンスどうすればいいのでしょうね？
- 詳しい人教えて。
+ 本ライブラリを使用したゲームをリリースする場合、janomeもMeCap-IPADICも配布物には直接含まないはずで、含むのはそれらの結果を解析したキャッシュデータだけなのですがこの場合ライセンスどうなるのでしょうね？
+
+ 直接ファイルを含んでいるつもりでJanome-0.4.2.dist-info/NOTICE.txt ファイルを配布するゲームに含めてREADMEやAppStoreに以下の文言を追加すれば大丈夫だとは思います。:
+
+    本プログラムは以下のプロジェクトの成果物を含んでいます。.
+
+    janome (https://github.com/mocobeta/janome) Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+    MeCab-IPADIC (Nara Institute of Science and Technology)
 
  
 折り返しアルゴリズムについて
@@ -85,6 +91,8 @@
 
  * Janome <https://mocobeta.github.io/janome/>
  * MeCab-IPADIC dictionary/statistical model
+
+ 本ライブラリ自体はMITライセンスとします。
 
  動作環境
 =========
