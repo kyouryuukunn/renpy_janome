@@ -56,13 +56,15 @@
         renpy.text.textsupport.annotate_western = _janome.annotate_janome
 ```
 
- 8. janomeによる折り返しを使用したいテキストのスタイルに7. で設定したlanguageスタイルプロパティーを設定してください。例えばadvやnvlウィンドウのテキストならばsay_dialogueとnvl_dialogue テキスト履歴はhistory_textになります。<Shift+i>で使用できるstyle インスペクターでスタイル名は分かります。影響が大きすぎるのでdefaultスタイルの変更は非推奨です。:
+ 8. janomeによる折り返しを使用したいテキストのスタイルに7. で設定したlanguageスタイルプロパティーを設定してください。例えばadvやnvlウィンドウのテキストならばsay_dialogueとnvl_dialogueおよびsay_thoughtとnvl_thought テキスト履歴はhistory_textになります。<Shift+i>で使用できるstyle インスペクターでスタイル名は分かります。影響が大きすぎるのでdefaultスタイルの変更は非推奨です。:
 
 ```
     init python:
-        style.say_dialogue.language = "western"
-        style.nvl_dialogue.language = "western"
-        style.history_text.language = "western"
+        style.say_dialogue.language = "western" # advウィンドウのキャラクターの台詞テキストに適用
+        style.nvl_dialogue.language = "western" # nvlウィンドウのキャラクターの台詞テキストに適用
+        style.say_thought.language  = "western" # advウィンドウのナレーションテキストに適用
+        style.nvl_thought.language  = "western" # nvlウィンドウのナレーションテキストに適用
+        style.history_text.language = "western" # テキスト履歴に適用
 ```
 
  9. これで8. で設定したテキストの折り返しで文法を考慮した折り返しが実施されるはずです。ゲームのリリース時にはjanome.rpycとjanome_cache.rpycを配布物に含めてください。
